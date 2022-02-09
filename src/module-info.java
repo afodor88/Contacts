@@ -4,4 +4,5 @@ module com.alex.Contacts {
     requires java.xml;
 
     opens sample;
+    opens sample.datamodel;
 }
