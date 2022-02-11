@@ -28,4 +28,20 @@ public class ContactController {
         return newContact;
     }
 
+    //getting the info of the contact selected and populating the fields in the Edit dialog before the user edits them
+    public void editContact(Contact contact){
+        firstNameField.setText(contact.getFirstName());
+        lastNameField.setText(contact.getLastName());
+        phoneNumberField.setText(contact.getPhoneNumber());
+        notesField.setText(contact.getNotes());
+    }
+
+    //getting the info the user added in the Edit Dialog in order to update the table
+    public void updateContact(Contact contact){
+        contact.setFirstName(firstNameField.getText());
+        contact.setLastName(lastNameField.getText());
+        contact.setPhoneNumber(phoneNumberField.getText());
+        contact.setNotes(notesField.getText());
+    }
+
 }
