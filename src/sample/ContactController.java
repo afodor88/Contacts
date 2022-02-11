@@ -36,7 +36,7 @@ public class ContactController {
         notesField.setText(contact.getNotes());
     }
 
-    //getting the info the user added in the Edit Dialog in order to update the table
+    //getting the info the user added in the Edit Dialog and updating the contact -> table view will update the UI automatically
     public void updateContact(Contact contact){
         contact.setFirstName(firstNameField.getText());
         contact.setLastName(lastNameField.getText());
