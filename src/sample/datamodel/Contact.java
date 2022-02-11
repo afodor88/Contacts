@@ -23,6 +23,7 @@ public class Contact {
         return firstName.get();
     }
 
+    //the method needs to have this exact name so table view will be refreshed after editing contact
     public SimpleStringProperty firstNameProperty() {
         return firstName;
     }
@@ -35,6 +36,7 @@ public class Contact {
         return lastName.get();
     }
 
+    //the method needs to have this exact name so table view will be refreshed after editing contact
     public SimpleStringProperty lastNameProperty() {
         return lastName;
     }
@@ -47,6 +49,7 @@ public class Contact {
         return phoneNumber.get();
     }
 
+    //the method needs to have this exact name so table view will be refreshed after editing contact
     public SimpleStringProperty phoneNumberProperty() {
         return phoneNumber;
     }
@@ -59,6 +62,7 @@ public class Contact {
         return notes.get();
     }
 
+    //the method needs to have this exact name so table view will be refreshed after editing contact
     public SimpleStringProperty notesProperty() {
         return notes;
     }
